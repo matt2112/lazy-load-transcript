@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 import uniqueId from 'lodash/uniqueId';
+import LazyLoad from 'react-lazy-load';
 
 import ActionButton from './components/ActionButton';
 import TranscriptView from './components/TranscriptView';
@@ -36,7 +37,7 @@ const ActionButtonWrapper = styled.div`
   padding-top: 30px;
 `;
 
-const Paragraph = styled.div`
+const Paragraph = styled(LazyLoad)`
   margin-bottom: 20px;
 `;
 
@@ -101,7 +102,11 @@ class App extends Component<Props, State> {
         const paraNum = parseInt(word.para.split('-')[1], 10);
         if (paraNum !== currentParaNum) {
           if (currentPara.length > 0) {
-            paras.push(<Paragraph key={uniqueId()}>{currentPara.join(' ')}</Paragraph>);
+            paras.push(
+              <Paragraph key={uniqueId()} offsetVertical={50}>
+                <div>{currentPara.join(' ')}</div>
+              </Paragraph>
+            );
           }
           currentPara = [word.name];
           currentParaNum = paraNum;
@@ -109,7 +114,11 @@ class App extends Component<Props, State> {
           currentPara.push(word.name);
         }
       });
-      paras.push(<Paragraph key={uniqueId()}>{currentPara.join(' ')}</Paragraph>);
+      paras.push(
+        <Paragraph key={uniqueId()} offsetVertical={50}>
+          <div>{currentPara.join(' ')}</div>
+        </Paragraph>
+      );
       return paras;
     });
     this.setState({
