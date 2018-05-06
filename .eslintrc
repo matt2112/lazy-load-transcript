@@ -1,0 +1,14 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "extends": ["airbnb", "plugin:flowtype/recommended"],
+  "plugins": ["flowtype", "import", "jsx-a11y", "react"],
+  "rules": {
+    "comma-dangle": ["error", "never"],
+    "function-paren-newline": ["error", "consistent"],
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }]
+  }
+}
