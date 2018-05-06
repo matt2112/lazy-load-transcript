@@ -15,6 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --watchAll --env=jsdom",
     "eject": "react-scripts eject",
     "deploy-lambda": "serverless deploy -v --stage dev",
     "update-lambda": "serverless deploy function -f app --stage dev"
@@ -22,6 +23,8 @@
   "devDependencies": {
     "babel-eslint": "^8.2.3",
     "babel-preset-flow": "^6.23.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-import-resolver-webpack": "^0.9.0",

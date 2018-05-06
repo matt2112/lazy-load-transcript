@@ -18,6 +18,10 @@ class App extends Component<Props, State> {
   };
 
   componentDidMount() {
+    this.retrieveData();
+  }
+
+  retrieveData = () => {
     axios
       .get('https://vnsp2998o9.execute-api.eu-west-2.amazonaws.com/dev/')
       .then((res) => {
@@ -26,7 +30,7 @@ class App extends Component<Props, State> {
         });
       })
       .catch(err => console.log('ERROR:', err));
-  }
+  };
 
   render() {
     return (
