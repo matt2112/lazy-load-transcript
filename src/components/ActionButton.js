@@ -10,9 +10,18 @@ const Button = styled.button`
 
 type Props = {
   children: React.Node,
-  size: string
+  size: string,
+  onClick?: () => void
 };
 
-const ActionButton = (props: Props) => <Button {...props}>{props.children}</Button>;
+const ActionButton = (props: Props) => (
+  <Button onClick={props.onClick} {...props}>
+    {props.children}
+  </Button>
+);
+
+ActionButton.defaultProps = {
+  onClick: val => val
+};
 
 export default ActionButton;
