@@ -1,0 +1,15 @@
+service: lazy-load-transcript
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: eu-west-2
+
+functions:
+  app:
+    handler: server/index.handler
+    events:
+      - http:
+          path: /
+          method: get
