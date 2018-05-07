@@ -2,8 +2,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
-import uniqueId from 'lodash/uniqueId';
-import LazyLoad from 'react-lazy-load';
+import cloneDeep from 'lodash/cloneDeep';
 
 import ActionButton from './components/ActionButton';
 import TranscriptView from './components/TranscriptView';
@@ -37,9 +36,8 @@ const ActionButtonWrapper = styled.div`
   padding-top: 30px;
 `;
 
-const Paragraph = styled(LazyLoad)`
-  margin-bottom: 20px;
-`;
+const ENGLISH = 'english';
+const FRENCH = 'french';
 
 type Props = {};
 
@@ -48,15 +46,23 @@ type State = {
     name: string,
     para: string
   }>,
-  pages: Array<Array<typeof Paragraph>>,
-  currentPage: number
+  pages: {
+    english: Array<Array<string>>,
+    french: Array<Array<string>>
+  },
+  currentPage: number,
+  currentLanguage: string
 };
 
 class App extends Component<Props, State> {
   state = {
     words: [],
-    pages: [],
-    currentPage: 0
+    pages: {
+      english: [],
+      french: []
+    },
+    currentPage: 0,
+    currentLanguage: ENGLISH
   };
 
   componentDidMount() {
@@ -65,7 +71,6 @@ class App extends Component<Props, State> {
 
   retrieveData = () => {
     axios
-      // .get(`${baseUrl}/transcript`)
       .get('https://vnsp2998o9.execute-api.eu-west-2.amazonaws.com/dev/transcript')
       .then((res) => {
         this.setState(
@@ -103,11 +108,7 @@ class App extends Component<Props, State> {
         const paraNum = parseInt(word.para.split('-')[1], 10);
         if (paraNum !== currentParaNum) {
           if (currentPara.length > 0) {
-            paras.push(
-              <Paragraph key={uniqueId()} offsetVertical={50}>
-                <div>{currentPara.join(' ')}</div>
-              </Paragraph>
-            );
+            paras.push(currentPara.join(' '));
           }
           currentPara = [word.name];
           currentParaNum = paraNum;
@@ -115,21 +116,20 @@ class App extends Component<Props, State> {
           currentPara.push(word.name);
         }
       });
-      paras.push(
-        <Paragraph key={uniqueId()} offsetVertical={50}>
-          <div>{currentPara.join(' ')}</div>
-        </Paragraph>
-      );
+      paras.push(currentPara.join(' '));
       return paras;
     });
     this.setState({
-      pages: paragraphedPages
+      pages: {
+        english: paragraphedPages,
+        french: []
+      }
     });
   };
 
   nextPage = () => {
     this.setState((prevState) => {
-      if (prevState.currentPage < prevState.pages.length - 1) {
+      if (prevState.currentPage < prevState.pages[prevState.currentLanguage].length - 1) {
         return {
           currentPage: prevState.currentPage + 1
         };
@@ -139,25 +139,46 @@ class App extends Component<Props, State> {
   };
 
   translate = () => {
-    axios
-      .post('https://vnsp2998o9.execute-api.eu-west-2.amazonaws.com/dev/translate', {
-        text: 'here is some English to test'
-      })
-      .then(res => console.log('RESULT!', res))
-      .catch(err => console.log('ERR!', err));
+    this.state.pages.english[this.state.currentPage].forEach((para, idx) => {
+      axios
+        .post('https://vnsp2998o9.execute-api.eu-west-2.amazonaws.com/dev/translate', {
+          text: para
+        })
+        .then((res) => {
+          this.setState((prevState) => {
+            const pages = cloneDeep(prevState.pages);
+            pages.french[this.state.currentPage] = pages.french[this.state.currentPage] || [];
+            pages.french[this.state.currentPage][idx] = res.data;
+            return {
+              pages
+            };
+          });
+        })
+        .catch(err => console.log('ERR!', err));
+    });
+  };
+
+  changeLanguage = (lang) => {
+    this.setState({
+      currentLanguage: lang
+    });
   };
 
   render() {
-    const { pages, currentPage } = this.state;
+    const { pages, currentLanguage, currentPage } = this.state;
     return (
       <Wrapper>
         <Container>
           <Header>Lazy Load Transcript</Header>
           <TabButtonWrapper>
-            <ActionButton size="small">English</ActionButton>
-            <ActionButton size="small">French</ActionButton>
+            <ActionButton size="small" onClick={() => this.changeLanguage(ENGLISH)}>
+              English
+            </ActionButton>
+            <ActionButton size="small" onClick={() => this.changeLanguage(FRENCH)}>
+              French
+            </ActionButton>
           </TabButtonWrapper>
-          <TranscriptView>{pages[currentPage]}</TranscriptView>
+          <TranscriptView text={pages[currentLanguage][currentPage]} />
           <ActionButtonWrapper>
             <ActionButton size="large" onClick={this.nextPage}>
               Next Page
