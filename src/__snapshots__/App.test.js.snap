@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should mount without exploding 1`] = `
-ReactWrapper {
+exports[`should render without exploding 1`] = `
+ShallowWrapper {
   "length": 1,
+  Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <App />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -11,1167 +12,2048 @@ ReactWrapper {
     "simulateEvent": [Function],
     "unmount": [Function],
   },
-  Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__node__): Object {
-    "instance": App {
-      "_reactInternalFiber": FiberNode {
-        "_debugID": 5,
-        "_debugIsCurrentlyTiming": false,
-        "_debugOwner": FiberNode {
-          "_debugID": 4,
-          "_debugIsCurrentlyTiming": false,
-          "_debugOwner": null,
-          "_debugSource": null,
-          "alternate": null,
-          "child": [Circular],
-          "effectTag": 1,
-          "expirationTime": 0,
-          "firstEffect": [Circular],
-          "index": 0,
-          "key": null,
-          "lastEffect": [Circular],
-          "memoizedProps": Object {
-            "Component": [Function],
-            "context": null,
-            "props": Object {},
-          },
-          "memoizedState": Object {
-            "context": null,
-            "mount": true,
-            "props": Object {},
-          },
-          "mode": 0,
-          "nextEffect": null,
-          "pendingProps": Object {
-            "Component": [Function],
-            "context": null,
-            "props": Object {},
-          },
-          "ref": null,
-          "return": FiberNode {
-            "_debugID": 1,
-            "_debugIsCurrentlyTiming": false,
-            "_debugOwner": null,
-            "_debugSource": null,
-            "alternate": FiberNode {
-              "_debugID": 1,
-              "_debugIsCurrentlyTiming": false,
-              "_debugOwner": null,
-              "_debugSource": null,
-              "alternate": [Circular],
-              "child": null,
-              "effectTag": 0,
-              "expirationTime": 1,
-              "firstEffect": null,
-              "index": 0,
-              "key": null,
-              "lastEffect": null,
-              "memoizedProps": null,
-              "memoizedState": null,
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": null,
-              "ref": null,
-              "return": null,
-              "sibling": null,
-              "stateNode": Object {
-                "containerInfo": <div>
-                  <div
-                                    class="App"
-                  >
-                                    <h1>
-                                                      Lazy Load Transcript
-                                    </h1>
-                  </div>
-</div>,
-                "context": Object {},
-                "current": [Circular],
-                "finishedWork": null,
-                "firstBatch": null,
-                "hydrate": false,
-                "nextScheduledRoot": null,
-                "pendingChildren": null,
-                "pendingCommitExpirationTime": 0,
-                "pendingContext": null,
-                "remainingExpirationTime": 0,
-              },
-              "tag": 3,
-              "type": null,
-              "updateQueue": Object {
-                "baseState": null,
-                "callbackList": null,
-                "capturedValues": null,
-                "expirationTime": 1,
-                "first": Object {
-                  "callback": null,
-                  "capturedValue": null,
-                  "expirationTime": 1,
-                  "isForced": false,
-                  "isReplace": false,
-                  "next": null,
-                  "partialState": Object {
-                    "element": <WrapperComponent
-                      Component={[Function]}
-                      context={null}
-                      props={Object {}}
-/>,
-                  },
-                },
-                "hasForceUpdate": false,
-                "isInitialized": false,
-                "isProcessing": false,
-                "last": Object {
-                  "callback": null,
-                  "capturedValue": null,
-                  "expirationTime": 1,
-                  "isForced": false,
-                  "isReplace": false,
-                  "next": null,
-                  "partialState": Object {
-                    "element": <WrapperComponent
-                      Component={[Function]}
-                      context={null}
-                      props={Object {}}
-/>,
-                  },
-                },
-              },
-            },
-            "child": [Circular],
-            "effectTag": 32,
-            "expirationTime": 0,
-            "firstEffect": [Circular],
-            "index": 0,
-            "key": null,
-            "lastEffect": [Circular],
-            "memoizedProps": null,
-            "memoizedState": Object {
-              "element": <WrapperComponent
-                Component={[Function]}
-                context={null}
-                props={Object {}}
-/>,
-            },
-            "mode": 0,
-            "nextEffect": null,
-            "pendingProps": null,
-            "ref": null,
-            "return": null,
-            "sibling": null,
-            "stateNode": Object {
-              "containerInfo": <div>
-                <div
-                                class="App"
-                >
-                                <h1>
-                                                Lazy Load Transcript
-                                </h1>
-                </div>
-</div>,
-              "context": Object {},
-              "current": [Circular],
-              "finishedWork": null,
-              "firstBatch": null,
-              "hydrate": false,
-              "nextScheduledRoot": null,
-              "pendingChildren": null,
-              "pendingCommitExpirationTime": 0,
-              "pendingContext": null,
-              "remainingExpirationTime": 0,
-            },
-            "tag": 3,
-            "type": null,
-            "updateQueue": Object {
-              "baseState": Object {
-                "element": <WrapperComponent
-                  Component={[Function]}
-                  context={null}
-                  props={Object {}}
-/>,
-              },
-              "callbackList": null,
-              "capturedValues": null,
-              "expirationTime": 0,
-              "first": null,
-              "hasForceUpdate": false,
-              "isInitialized": true,
-              "isProcessing": false,
-              "last": null,
-            },
-          },
-          "sibling": null,
-          "stateNode": WrapperComponent {
-            "_reactInternalFiber": [Circular],
-            "_reactInternalInstance": Object {},
-            "context": Object {},
-            "props": Object {
-              "Component": [Function],
-              "context": null,
-              "props": Object {},
-            },
-            "refs": Object {},
-            "state": Object {
-              "context": null,
-              "mount": true,
-              "props": Object {},
-            },
-            "updater": Object {
-              "enqueueForceUpdate": [Function],
-              "enqueueReplaceState": [Function],
-              "enqueueSetState": [Function],
-              "isMounted": [Function],
-            },
-          },
-          "tag": 2,
-          "type": [Function],
-          "updateQueue": null,
-        },
-        "_debugSource": null,
-        "alternate": null,
-        "child": FiberNode {
-          "_debugID": 6,
-          "_debugIsCurrentlyTiming": false,
-          "_debugOwner": [Circular],
-          "_debugSource": Object {
-            "fileName": "/Users/matt/Documents/Code/Technical Tests/lazy-load-transcript/src/App.js",
-            "lineNumber": 37,
-          },
-          "alternate": null,
-          "child": FiberNode {
-            "_debugID": 7,
-            "_debugIsCurrentlyTiming": false,
-            "_debugOwner": [Circular],
-            "_debugSource": Object {
-              "fileName": "/Users/matt/Documents/Code/Technical Tests/lazy-load-transcript/src/App.js",
-              "lineNumber": 38,
-            },
-            "alternate": null,
-            "child": null,
-            "effectTag": 0,
-            "expirationTime": 0,
-            "firstEffect": null,
-            "index": 0,
-            "key": null,
-            "lastEffect": null,
-            "memoizedProps": Object {
-              "children": "Lazy Load Transcript",
-            },
-            "memoizedState": null,
-            "mode": 0,
-            "nextEffect": null,
-            "pendingProps": Object {
-              "children": "Lazy Load Transcript",
-            },
-            "ref": null,
-            "return": [Circular],
-            "sibling": null,
-            "stateNode": <h1>
-              Lazy Load Transcript
-</h1>,
-            "tag": 5,
-            "type": "h1",
-            "updateQueue": null,
-          },
-          "effectTag": 0,
-          "expirationTime": 0,
-          "firstEffect": null,
-          "index": 0,
-          "key": null,
-          "lastEffect": null,
-          "memoizedProps": Object {
-            "children": <h1>
-              Lazy Load Transcript
-</h1>,
-            "className": "App",
-          },
-          "memoizedState": null,
-          "mode": 0,
-          "nextEffect": null,
-          "pendingProps": Object {
-            "children": <h1>
-              Lazy Load Transcript
-</h1>,
-            "className": "App",
-          },
-          "ref": null,
-          "return": [Circular],
-          "sibling": null,
-          "stateNode": <div
-            class="App"
->
-            <h1>
-                        Lazy Load Transcript
-            </h1>
-</div>,
-          "tag": 5,
-          "type": "div",
-          "updateQueue": null,
-        },
-        "effectTag": 5,
-        "expirationTime": 0,
-        "firstEffect": null,
-        "index": 0,
-        "key": null,
-        "lastEffect": null,
-        "memoizedProps": Object {},
-        "memoizedState": Object {
-          "words": Array [],
-        },
-        "mode": 0,
-        "nextEffect": null,
-        "pendingProps": Object {},
-        "ref": null,
-        "return": FiberNode {
-          "_debugID": 4,
-          "_debugIsCurrentlyTiming": false,
-          "_debugOwner": null,
-          "_debugSource": null,
-          "alternate": null,
-          "child": [Circular],
-          "effectTag": 1,
-          "expirationTime": 0,
-          "firstEffect": [Circular],
-          "index": 0,
-          "key": null,
-          "lastEffect": [Circular],
-          "memoizedProps": Object {
-            "Component": [Function],
-            "context": null,
-            "props": Object {},
-          },
-          "memoizedState": Object {
-            "context": null,
-            "mount": true,
-            "props": Object {},
-          },
-          "mode": 0,
-          "nextEffect": null,
-          "pendingProps": Object {
-            "Component": [Function],
-            "context": null,
-            "props": Object {},
-          },
-          "ref": null,
-          "return": FiberNode {
-            "_debugID": 1,
-            "_debugIsCurrentlyTiming": false,
-            "_debugOwner": null,
-            "_debugSource": null,
-            "alternate": FiberNode {
-              "_debugID": 1,
-              "_debugIsCurrentlyTiming": false,
-              "_debugOwner": null,
-              "_debugSource": null,
-              "alternate": [Circular],
-              "child": null,
-              "effectTag": 0,
-              "expirationTime": 1,
-              "firstEffect": null,
-              "index": 0,
-              "key": null,
-              "lastEffect": null,
-              "memoizedProps": null,
-              "memoizedState": null,
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": null,
-              "ref": null,
-              "return": null,
-              "sibling": null,
-              "stateNode": Object {
-                "containerInfo": <div>
-                  <div
-                                    class="App"
-                  >
-                                    <h1>
-                                                      Lazy Load Transcript
-                                    </h1>
-                  </div>
-</div>,
-                "context": Object {},
-                "current": [Circular],
-                "finishedWork": null,
-                "firstBatch": null,
-                "hydrate": false,
-                "nextScheduledRoot": null,
-                "pendingChildren": null,
-                "pendingCommitExpirationTime": 0,
-                "pendingContext": null,
-                "remainingExpirationTime": 0,
-              },
-              "tag": 3,
-              "type": null,
-              "updateQueue": Object {
-                "baseState": null,
-                "callbackList": null,
-                "capturedValues": null,
-                "expirationTime": 1,
-                "first": Object {
-                  "callback": null,
-                  "capturedValue": null,
-                  "expirationTime": 1,
-                  "isForced": false,
-                  "isReplace": false,
-                  "next": null,
-                  "partialState": Object {
-                    "element": <WrapperComponent
-                      Component={[Function]}
-                      context={null}
-                      props={Object {}}
-/>,
-                  },
-                },
-                "hasForceUpdate": false,
-                "isInitialized": false,
-                "isProcessing": false,
-                "last": Object {
-                  "callback": null,
-                  "capturedValue": null,
-                  "expirationTime": 1,
-                  "isForced": false,
-                  "isReplace": false,
-                  "next": null,
-                  "partialState": Object {
-                    "element": <WrapperComponent
-                      Component={[Function]}
-                      context={null}
-                      props={Object {}}
-/>,
-                  },
-                },
-              },
-            },
-            "child": [Circular],
-            "effectTag": 32,
-            "expirationTime": 0,
-            "firstEffect": [Circular],
-            "index": 0,
-            "key": null,
-            "lastEffect": [Circular],
-            "memoizedProps": null,
-            "memoizedState": Object {
-              "element": <WrapperComponent
-                Component={[Function]}
-                context={null}
-                props={Object {}}
-/>,
-            },
-            "mode": 0,
-            "nextEffect": null,
-            "pendingProps": null,
-            "ref": null,
-            "return": null,
-            "sibling": null,
-            "stateNode": Object {
-              "containerInfo": <div>
-                <div
-                                class="App"
-                >
-                                <h1>
-                                                Lazy Load Transcript
-                                </h1>
-                </div>
-</div>,
-              "context": Object {},
-              "current": [Circular],
-              "finishedWork": null,
-              "firstBatch": null,
-              "hydrate": false,
-              "nextScheduledRoot": null,
-              "pendingChildren": null,
-              "pendingCommitExpirationTime": 0,
-              "pendingContext": null,
-              "remainingExpirationTime": 0,
-            },
-            "tag": 3,
-            "type": null,
-            "updateQueue": Object {
-              "baseState": Object {
-                "element": <WrapperComponent
-                  Component={[Function]}
-                  context={null}
-                  props={Object {}}
-/>,
-              },
-              "callbackList": null,
-              "capturedValues": null,
-              "expirationTime": 0,
-              "first": null,
-              "hasForceUpdate": false,
-              "isInitialized": true,
-              "isProcessing": false,
-              "last": null,
-            },
-          },
-          "sibling": null,
-          "stateNode": WrapperComponent {
-            "_reactInternalFiber": [Circular],
-            "_reactInternalInstance": Object {},
-            "context": Object {},
-            "props": Object {
-              "Component": [Function],
-              "context": null,
-              "props": Object {},
-            },
-            "refs": Object {},
-            "state": Object {
-              "context": null,
-              "mount": true,
-              "props": Object {},
-            },
-            "updater": Object {
-              "enqueueForceUpdate": [Function],
-              "enqueueReplaceState": [Function],
-              "enqueueSetState": [Function],
-              "isMounted": [Function],
-            },
-          },
-          "tag": 2,
-          "type": [Function],
-          "updateQueue": null,
-        },
-        "sibling": null,
-        "stateNode": [Circular],
-        "tag": 2,
-        "type": [Function],
-        "updateQueue": null,
-      },
-      "_reactInternalInstance": Object {},
-      "context": Object {},
-      "props": Object {},
-      "refs": Object {},
-      "retrieveData": [Function],
-      "state": Object {
-        "words": Array [],
-      },
-      "updater": Object {
-        "enqueueForceUpdate": [Function],
-        "enqueueReplaceState": [Function],
-        "enqueueSetState": [Function],
-        "isMounted": [Function],
-      },
-    },
+    "instance": null,
     "key": undefined,
     "nodeType": "class",
-    "props": Object {},
+    "props": Object {
+      "children": <styled.div>
+        <styled.h1>
+                Lazy Load Transcript
+        </styled.h1>
+        <styled.div>
+                <styled.div>
+                        <ActionButton
+                                active={true}
+                                onClick={[Function]}
+                                size="small"
+                        >
+                                English
+                        </ActionButton>
+                        <ActionButton
+                                active={false}
+                                onClick={[Function]}
+                                size="small"
+                        >
+                                French
+                        </ActionButton>
+                </styled.div>
+                <styled.h3>
+                        Page 
+                        1
+                </styled.h3>
+        </styled.div>
+        <TranscriptView
+                currentLanguage="english"
+                loadingData={true}
+                text={Array []}
+                translating={false}
+        />
+        <styled.div>
+                <ActionButton
+                        onClick={[Function]}
+                        size="large"
+                >
+                        Previous Page
+                </ActionButton>
+                <ActionButton
+                        onClick={[Function]}
+                        size="large"
+                >
+                        Next Page
+                </ActionButton>
+                <ActionButton
+                        onClick={[Function]}
+                        size="large"
+                >
+                        Translate
+                </ActionButton>
+        </styled.div>
+</styled.div>,
+    },
     "ref": null,
     "rendered": Object {
-      "instance": <div
-        class="App"
->
-        <h1>
-                Lazy Load Transcript
-        </h1>
-</div>,
+      "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
-        "children": <h1>
-          Lazy Load Transcript
-</h1>,
-        "className": "App",
+        "children": Array [
+          <styled.h1>
+            Lazy Load Transcript
+</styled.h1>,
+          <styled.div>
+            <styled.div>
+                        <ActionButton
+                                    active={true}
+                                    onClick={[Function]}
+                                    size="small"
+                        >
+                                    English
+                        </ActionButton>
+                        <ActionButton
+                                    active={false}
+                                    onClick={[Function]}
+                                    size="small"
+                        >
+                                    French
+                        </ActionButton>
+            </styled.div>
+            <styled.h3>
+                        Page 
+                        1
+            </styled.h3>
+</styled.div>,
+          <TranscriptView
+            currentLanguage="english"
+            loadingData={true}
+            text={Array []}
+            translating={false}
+/>,
+          <styled.div>
+            <ActionButton
+                        onClick={[Function]}
+                        size="large"
+            >
+                        Previous Page
+            </ActionButton>
+            <ActionButton
+                        onClick={[Function]}
+                        size="large"
+            >
+                        Next Page
+            </ActionButton>
+            <ActionButton
+                        onClick={[Function]}
+                        size="large"
+            >
+                        Translate
+            </ActionButton>
+</styled.div>,
+        ],
       },
       "ref": null,
       "rendered": Array [
         Object {
-          "instance": <h1>
-            Lazy Load Transcript
-</h1>,
+          "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
             "children": "Lazy Load Transcript",
           },
           "ref": null,
+          "rendered": "Lazy Load Transcript",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.div>
+                <ActionButton
+                                active={true}
+                                onClick={[Function]}
+                                size="small"
+                >
+                                English
+                </ActionButton>
+                <ActionButton
+                                active={false}
+                                onClick={[Function]}
+                                size="small"
+                >
+                                French
+                </ActionButton>
+</styled.div>,
+              <styled.h3>
+                Page 
+                1
+</styled.h3>,
+            ],
+          },
+          "ref": null,
           "rendered": Array [
-            "Lazy Load Transcript",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <ActionButton
+                    active={true}
+                    onClick={[Function]}
+                    size="small"
+>
+                    English
+</ActionButton>,
+                  <ActionButton
+                    active={false}
+                    onClick={[Function]}
+                    size="small"
+>
+                    French
+</ActionButton>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "active": true,
+                    "children": "English",
+                    "onClick": [Function],
+                    "size": "small",
+                  },
+                  "ref": null,
+                  "rendered": "English",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "active": false,
+                    "children": "French",
+                    "onClick": [Function],
+                    "size": "small",
+                  },
+                  "ref": null,
+                  "rendered": "French",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  "Page ",
+                  1,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Page ",
+                1,
+              ],
+              "type": [Function],
+            },
           ],
-          "type": "h1",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentLanguage": "english",
+            "loadingData": true,
+            "text": Array [],
+            "translating": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <ActionButton
+                onClick={[Function]}
+                size="large"
+>
+                Previous Page
+</ActionButton>,
+              <ActionButton
+                onClick={[Function]}
+                size="large"
+>
+                Next Page
+</ActionButton>,
+              <ActionButton
+                onClick={[Function]}
+                size="large"
+>
+                Translate
+</ActionButton>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Previous Page",
+                "onClick": [Function],
+                "size": "large",
+              },
+              "ref": null,
+              "rendered": "Previous Page",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Next Page",
+                "onClick": [Function],
+                "size": "large",
+              },
+              "ref": null,
+              "rendered": "Next Page",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Translate",
+                "onClick": [Function],
+                "size": "large",
+              },
+              "ref": null,
+              "rendered": "Translate",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
         },
       ],
-      "type": "div",
+      "type": [Function],
     },
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
-      "instance": App {
-        "_reactInternalFiber": FiberNode {
-          "_debugID": 5,
-          "_debugIsCurrentlyTiming": false,
-          "_debugOwner": FiberNode {
-            "_debugID": 4,
-            "_debugIsCurrentlyTiming": false,
-            "_debugOwner": null,
-            "_debugSource": null,
-            "alternate": null,
-            "child": [Circular],
-            "effectTag": 1,
-            "expirationTime": 0,
-            "firstEffect": [Circular],
-            "index": 0,
-            "key": null,
-            "lastEffect": [Circular],
-            "memoizedProps": Object {
-              "Component": [Function],
-              "context": null,
-              "props": Object {},
-            },
-            "memoizedState": Object {
-              "context": null,
-              "mount": true,
-              "props": Object {},
-            },
-            "mode": 0,
-            "nextEffect": null,
-            "pendingProps": Object {
-              "Component": [Function],
-              "context": null,
-              "props": Object {},
-            },
-            "ref": null,
-            "return": FiberNode {
-              "_debugID": 1,
-              "_debugIsCurrentlyTiming": false,
-              "_debugOwner": null,
-              "_debugSource": null,
-              "alternate": FiberNode {
-                "_debugID": 1,
-                "_debugIsCurrentlyTiming": false,
-                "_debugOwner": null,
-                "_debugSource": null,
-                "alternate": [Circular],
-                "child": null,
-                "effectTag": 0,
-                "expirationTime": 1,
-                "firstEffect": null,
-                "index": 0,
-                "key": null,
-                "lastEffect": null,
-                "memoizedProps": null,
-                "memoizedState": null,
-                "mode": 0,
-                "nextEffect": null,
-                "pendingProps": null,
-                "ref": null,
-                "return": null,
-                "sibling": null,
-                "stateNode": Object {
-                  "containerInfo": <div>
-                    <div
-                                        class="App"
-                    >
-                                        <h1>
-                                                            Lazy Load Transcript
-                                        </h1>
-                    </div>
-</div>,
-                  "context": Object {},
-                  "current": [Circular],
-                  "finishedWork": null,
-                  "firstBatch": null,
-                  "hydrate": false,
-                  "nextScheduledRoot": null,
-                  "pendingChildren": null,
-                  "pendingCommitExpirationTime": 0,
-                  "pendingContext": null,
-                  "remainingExpirationTime": 0,
-                },
-                "tag": 3,
-                "type": null,
-                "updateQueue": Object {
-                  "baseState": null,
-                  "callbackList": null,
-                  "capturedValues": null,
-                  "expirationTime": 1,
-                  "first": Object {
-                    "callback": null,
-                    "capturedValue": null,
-                    "expirationTime": 1,
-                    "isForced": false,
-                    "isReplace": false,
-                    "next": null,
-                    "partialState": Object {
-                      "element": <WrapperComponent
-                        Component={[Function]}
-                        context={null}
-                        props={Object {}}
-/>,
-                    },
-                  },
-                  "hasForceUpdate": false,
-                  "isInitialized": false,
-                  "isProcessing": false,
-                  "last": Object {
-                    "callback": null,
-                    "capturedValue": null,
-                    "expirationTime": 1,
-                    "isForced": false,
-                    "isReplace": false,
-                    "next": null,
-                    "partialState": Object {
-                      "element": <WrapperComponent
-                        Component={[Function]}
-                        context={null}
-                        props={Object {}}
-/>,
-                    },
-                  },
-                },
-              },
-              "child": [Circular],
-              "effectTag": 32,
-              "expirationTime": 0,
-              "firstEffect": [Circular],
-              "index": 0,
-              "key": null,
-              "lastEffect": [Circular],
-              "memoizedProps": null,
-              "memoizedState": Object {
-                "element": <WrapperComponent
-                  Component={[Function]}
-                  context={null}
-                  props={Object {}}
-/>,
-              },
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": null,
-              "ref": null,
-              "return": null,
-              "sibling": null,
-              "stateNode": Object {
-                "containerInfo": <div>
-                  <div
-                                    class="App"
-                  >
-                                    <h1>
-                                                      Lazy Load Transcript
-                                    </h1>
-                  </div>
-</div>,
-                "context": Object {},
-                "current": [Circular],
-                "finishedWork": null,
-                "firstBatch": null,
-                "hydrate": false,
-                "nextScheduledRoot": null,
-                "pendingChildren": null,
-                "pendingCommitExpirationTime": 0,
-                "pendingContext": null,
-                "remainingExpirationTime": 0,
-              },
-              "tag": 3,
-              "type": null,
-              "updateQueue": Object {
-                "baseState": Object {
-                  "element": <WrapperComponent
-                    Component={[Function]}
-                    context={null}
-                    props={Object {}}
-/>,
-                },
-                "callbackList": null,
-                "capturedValues": null,
-                "expirationTime": 0,
-                "first": null,
-                "hasForceUpdate": false,
-                "isInitialized": true,
-                "isProcessing": false,
-                "last": null,
-              },
-            },
-            "sibling": null,
-            "stateNode": WrapperComponent {
-              "_reactInternalFiber": [Circular],
-              "_reactInternalInstance": Object {},
-              "context": Object {},
-              "props": Object {
-                "Component": [Function],
-                "context": null,
-                "props": Object {},
-              },
-              "refs": Object {},
-              "state": Object {
-                "context": null,
-                "mount": true,
-                "props": Object {},
-              },
-              "updater": Object {
-                "enqueueForceUpdate": [Function],
-                "enqueueReplaceState": [Function],
-                "enqueueSetState": [Function],
-                "isMounted": [Function],
-              },
-            },
-            "tag": 2,
-            "type": [Function],
-            "updateQueue": null,
-          },
-          "_debugSource": null,
-          "alternate": null,
-          "child": FiberNode {
-            "_debugID": 6,
-            "_debugIsCurrentlyTiming": false,
-            "_debugOwner": [Circular],
-            "_debugSource": Object {
-              "fileName": "/Users/matt/Documents/Code/Technical Tests/lazy-load-transcript/src/App.js",
-              "lineNumber": 37,
-            },
-            "alternate": null,
-            "child": FiberNode {
-              "_debugID": 7,
-              "_debugIsCurrentlyTiming": false,
-              "_debugOwner": [Circular],
-              "_debugSource": Object {
-                "fileName": "/Users/matt/Documents/Code/Technical Tests/lazy-load-transcript/src/App.js",
-                "lineNumber": 38,
-              },
-              "alternate": null,
-              "child": null,
-              "effectTag": 0,
-              "expirationTime": 0,
-              "firstEffect": null,
-              "index": 0,
-              "key": null,
-              "lastEffect": null,
-              "memoizedProps": Object {
-                "children": "Lazy Load Transcript",
-              },
-              "memoizedState": null,
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": Object {
-                "children": "Lazy Load Transcript",
-              },
-              "ref": null,
-              "return": [Circular],
-              "sibling": null,
-              "stateNode": <h1>
-                Lazy Load Transcript
-</h1>,
-              "tag": 5,
-              "type": "h1",
-              "updateQueue": null,
-            },
-            "effectTag": 0,
-            "expirationTime": 0,
-            "firstEffect": null,
-            "index": 0,
-            "key": null,
-            "lastEffect": null,
-            "memoizedProps": Object {
-              "children": <h1>
-                Lazy Load Transcript
-</h1>,
-              "className": "App",
-            },
-            "memoizedState": null,
-            "mode": 0,
-            "nextEffect": null,
-            "pendingProps": Object {
-              "children": <h1>
-                Lazy Load Transcript
-</h1>,
-              "className": "App",
-            },
-            "ref": null,
-            "return": [Circular],
-            "sibling": null,
-            "stateNode": <div
-              class="App"
->
-              <h1>
-                            Lazy Load Transcript
-              </h1>
-</div>,
-            "tag": 5,
-            "type": "div",
-            "updateQueue": null,
-          },
-          "effectTag": 5,
-          "expirationTime": 0,
-          "firstEffect": null,
-          "index": 0,
-          "key": null,
-          "lastEffect": null,
-          "memoizedProps": Object {},
-          "memoizedState": Object {
-            "words": Array [],
-          },
-          "mode": 0,
-          "nextEffect": null,
-          "pendingProps": Object {},
-          "ref": null,
-          "return": FiberNode {
-            "_debugID": 4,
-            "_debugIsCurrentlyTiming": false,
-            "_debugOwner": null,
-            "_debugSource": null,
-            "alternate": null,
-            "child": [Circular],
-            "effectTag": 1,
-            "expirationTime": 0,
-            "firstEffect": [Circular],
-            "index": 0,
-            "key": null,
-            "lastEffect": [Circular],
-            "memoizedProps": Object {
-              "Component": [Function],
-              "context": null,
-              "props": Object {},
-            },
-            "memoizedState": Object {
-              "context": null,
-              "mount": true,
-              "props": Object {},
-            },
-            "mode": 0,
-            "nextEffect": null,
-            "pendingProps": Object {
-              "Component": [Function],
-              "context": null,
-              "props": Object {},
-            },
-            "ref": null,
-            "return": FiberNode {
-              "_debugID": 1,
-              "_debugIsCurrentlyTiming": false,
-              "_debugOwner": null,
-              "_debugSource": null,
-              "alternate": FiberNode {
-                "_debugID": 1,
-                "_debugIsCurrentlyTiming": false,
-                "_debugOwner": null,
-                "_debugSource": null,
-                "alternate": [Circular],
-                "child": null,
-                "effectTag": 0,
-                "expirationTime": 1,
-                "firstEffect": null,
-                "index": 0,
-                "key": null,
-                "lastEffect": null,
-                "memoizedProps": null,
-                "memoizedState": null,
-                "mode": 0,
-                "nextEffect": null,
-                "pendingProps": null,
-                "ref": null,
-                "return": null,
-                "sibling": null,
-                "stateNode": Object {
-                  "containerInfo": <div>
-                    <div
-                                        class="App"
-                    >
-                                        <h1>
-                                                            Lazy Load Transcript
-                                        </h1>
-                    </div>
-</div>,
-                  "context": Object {},
-                  "current": [Circular],
-                  "finishedWork": null,
-                  "firstBatch": null,
-                  "hydrate": false,
-                  "nextScheduledRoot": null,
-                  "pendingChildren": null,
-                  "pendingCommitExpirationTime": 0,
-                  "pendingContext": null,
-                  "remainingExpirationTime": 0,
-                },
-                "tag": 3,
-                "type": null,
-                "updateQueue": Object {
-                  "baseState": null,
-                  "callbackList": null,
-                  "capturedValues": null,
-                  "expirationTime": 1,
-                  "first": Object {
-                    "callback": null,
-                    "capturedValue": null,
-                    "expirationTime": 1,
-                    "isForced": false,
-                    "isReplace": false,
-                    "next": null,
-                    "partialState": Object {
-                      "element": <WrapperComponent
-                        Component={[Function]}
-                        context={null}
-                        props={Object {}}
-/>,
-                    },
-                  },
-                  "hasForceUpdate": false,
-                  "isInitialized": false,
-                  "isProcessing": false,
-                  "last": Object {
-                    "callback": null,
-                    "capturedValue": null,
-                    "expirationTime": 1,
-                    "isForced": false,
-                    "isReplace": false,
-                    "next": null,
-                    "partialState": Object {
-                      "element": <WrapperComponent
-                        Component={[Function]}
-                        context={null}
-                        props={Object {}}
-/>,
-                    },
-                  },
-                },
-              },
-              "child": [Circular],
-              "effectTag": 32,
-              "expirationTime": 0,
-              "firstEffect": [Circular],
-              "index": 0,
-              "key": null,
-              "lastEffect": [Circular],
-              "memoizedProps": null,
-              "memoizedState": Object {
-                "element": <WrapperComponent
-                  Component={[Function]}
-                  context={null}
-                  props={Object {}}
-/>,
-              },
-              "mode": 0,
-              "nextEffect": null,
-              "pendingProps": null,
-              "ref": null,
-              "return": null,
-              "sibling": null,
-              "stateNode": Object {
-                "containerInfo": <div>
-                  <div
-                                    class="App"
-                  >
-                                    <h1>
-                                                      Lazy Load Transcript
-                                    </h1>
-                  </div>
-</div>,
-                "context": Object {},
-                "current": [Circular],
-                "finishedWork": null,
-                "firstBatch": null,
-                "hydrate": false,
-                "nextScheduledRoot": null,
-                "pendingChildren": null,
-                "pendingCommitExpirationTime": 0,
-                "pendingContext": null,
-                "remainingExpirationTime": 0,
-              },
-              "tag": 3,
-              "type": null,
-              "updateQueue": Object {
-                "baseState": Object {
-                  "element": <WrapperComponent
-                    Component={[Function]}
-                    context={null}
-                    props={Object {}}
-/>,
-                },
-                "callbackList": null,
-                "capturedValues": null,
-                "expirationTime": 0,
-                "first": null,
-                "hasForceUpdate": false,
-                "isInitialized": true,
-                "isProcessing": false,
-                "last": null,
-              },
-            },
-            "sibling": null,
-            "stateNode": WrapperComponent {
-              "_reactInternalFiber": [Circular],
-              "_reactInternalInstance": Object {},
-              "context": Object {},
-              "props": Object {
-                "Component": [Function],
-                "context": null,
-                "props": Object {},
-              },
-              "refs": Object {},
-              "state": Object {
-                "context": null,
-                "mount": true,
-                "props": Object {},
-              },
-              "updater": Object {
-                "enqueueForceUpdate": [Function],
-                "enqueueReplaceState": [Function],
-                "enqueueSetState": [Function],
-                "isMounted": [Function],
-              },
-            },
-            "tag": 2,
-            "type": [Function],
-            "updateQueue": null,
-          },
-          "sibling": null,
-          "stateNode": [Circular],
-          "tag": 2,
-          "type": [Function],
-          "updateQueue": null,
-        },
-        "_reactInternalInstance": Object {},
-        "context": Object {},
-        "props": Object {},
-        "refs": Object {},
-        "retrieveData": [Function],
-        "state": Object {
-          "words": Array [],
-        },
-        "updater": Object {
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-        },
-      },
+      "instance": null,
       "key": undefined,
       "nodeType": "class",
-      "props": Object {},
+      "props": Object {
+        "children": <styled.div>
+          <styled.h1>
+                    Lazy Load Transcript
+          </styled.h1>
+          <styled.div>
+                    <styled.div>
+                              <ActionButton
+                                        active={true}
+                                        onClick={[Function]}
+                                        size="small"
+                              >
+                                        English
+                              </ActionButton>
+                              <ActionButton
+                                        active={false}
+                                        onClick={[Function]}
+                                        size="small"
+                              >
+                                        French
+                              </ActionButton>
+                    </styled.div>
+                    <styled.h3>
+                              Page 
+                              1
+                    </styled.h3>
+          </styled.div>
+          <TranscriptView
+                    currentLanguage="english"
+                    loadingData={true}
+                    text={Array []}
+                    translating={false}
+          />
+          <styled.div>
+                    <ActionButton
+                              onClick={[Function]}
+                              size="large"
+                    >
+                              Previous Page
+                    </ActionButton>
+                    <ActionButton
+                              onClick={[Function]}
+                              size="large"
+                    >
+                              Next Page
+                    </ActionButton>
+                    <ActionButton
+                              onClick={[Function]}
+                              size="large"
+                    >
+                              Translate
+                    </ActionButton>
+          </styled.div>
+</styled.div>,
+      },
       "ref": null,
       "rendered": Object {
-        "instance": <div
-          class="App"
->
-          <h1>
-                    Lazy Load Transcript
-          </h1>
-</div>,
+        "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": <h1>
-            Lazy Load Transcript
-</h1>,
-          "className": "App",
+          "children": Array [
+            <styled.h1>
+              Lazy Load Transcript
+</styled.h1>,
+            <styled.div>
+              <styled.div>
+                            <ActionButton
+                                          active={true}
+                                          onClick={[Function]}
+                                          size="small"
+                            >
+                                          English
+                            </ActionButton>
+                            <ActionButton
+                                          active={false}
+                                          onClick={[Function]}
+                                          size="small"
+                            >
+                                          French
+                            </ActionButton>
+              </styled.div>
+              <styled.h3>
+                            Page 
+                            1
+              </styled.h3>
+</styled.div>,
+            <TranscriptView
+              currentLanguage="english"
+              loadingData={true}
+              text={Array []}
+              translating={false}
+/>,
+            <styled.div>
+              <ActionButton
+                            onClick={[Function]}
+                            size="large"
+              >
+                            Previous Page
+              </ActionButton>
+              <ActionButton
+                            onClick={[Function]}
+                            size="large"
+              >
+                            Next Page
+              </ActionButton>
+              <ActionButton
+                            onClick={[Function]}
+                            size="large"
+              >
+                            Translate
+              </ActionButton>
+</styled.div>,
+          ],
         },
         "ref": null,
         "rendered": Array [
           Object {
-            "instance": <h1>
-              Lazy Load Transcript
-</h1>,
+            "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
               "children": "Lazy Load Transcript",
             },
             "ref": null,
+            "rendered": "Lazy Load Transcript",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <styled.div>
+                  <ActionButton
+                                    active={true}
+                                    onClick={[Function]}
+                                    size="small"
+                  >
+                                    English
+                  </ActionButton>
+                  <ActionButton
+                                    active={false}
+                                    onClick={[Function]}
+                                    size="small"
+                  >
+                                    French
+                  </ActionButton>
+</styled.div>,
+                <styled.h3>
+                  Page 
+                  1
+</styled.h3>,
+              ],
+            },
+            "ref": null,
             "rendered": Array [
-              "Lazy Load Transcript",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <ActionButton
+                      active={true}
+                      onClick={[Function]}
+                      size="small"
+>
+                      English
+</ActionButton>,
+                    <ActionButton
+                      active={false}
+                      onClick={[Function]}
+                      size="small"
+>
+                      French
+</ActionButton>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "active": true,
+                      "children": "English",
+                      "onClick": [Function],
+                      "size": "small",
+                    },
+                    "ref": null,
+                    "rendered": "English",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "active": false,
+                      "children": "French",
+                      "onClick": [Function],
+                      "size": "small",
+                    },
+                    "ref": null,
+                    "rendered": "French",
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    "Page ",
+                    1,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Page ",
+                  1,
+                ],
+                "type": [Function],
+              },
             ],
-            "type": "h1",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "currentLanguage": "english",
+              "loadingData": true,
+              "text": Array [],
+              "translating": false,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <ActionButton
+                  onClick={[Function]}
+                  size="large"
+>
+                  Previous Page
+</ActionButton>,
+                <ActionButton
+                  onClick={[Function]}
+                  size="large"
+>
+                  Next Page
+</ActionButton>,
+                <ActionButton
+                  onClick={[Function]}
+                  size="large"
+>
+                  Translate
+</ActionButton>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Previous Page",
+                  "onClick": [Function],
+                  "size": "large",
+                },
+                "ref": null,
+                "rendered": "Previous Page",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Next Page",
+                  "onClick": [Function],
+                  "size": "large",
+                },
+                "ref": null,
+                "rendered": "Next Page",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Translate",
+                  "onClick": [Function],
+                  "size": "large",
+                },
+                "ref": null,
+                "rendered": "Translate",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
           },
         ],
-        "type": "div",
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`should switch view when the language is switched from English to French and back 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <styled.div>
+        <styled.h1>
+                Lazy Load Transcript
+        </styled.h1>
+        <styled.div>
+                <styled.div>
+                        <ActionButton
+                                active={true}
+                                onClick={[Function]}
+                                size="small"
+                        >
+                                English
+                        </ActionButton>
+                        <ActionButton
+                                active={false}
+                                onClick={[Function]}
+                                size="small"
+                        >
+                                French
+                        </ActionButton>
+                </styled.div>
+                <styled.h3>
+                        Page 
+                        1
+                </styled.h3>
+        </styled.div>
+        <TranscriptView
+                currentLanguage="english"
+                loadingData={true}
+                text={
+                        Array [
+                                "one two three",
+                              ]
+                }
+                translating={false}
+        />
+        <styled.div>
+                <ActionButton
+                        onClick={[Function]}
+                        size="large"
+                >
+                        Previous Page
+                </ActionButton>
+                <ActionButton
+                        onClick={[Function]}
+                        size="large"
+                >
+                        Next Page
+                </ActionButton>
+                <ActionButton
+                        onClick={[Function]}
+                        size="large"
+                >
+                        Translate
+                </ActionButton>
+        </styled.div>
+</styled.div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.h1>
+            Lazy Load Transcript
+</styled.h1>,
+          <styled.div>
+            <styled.div>
+                        <ActionButton
+                                    active={true}
+                                    onClick={[Function]}
+                                    size="small"
+                        >
+                                    English
+                        </ActionButton>
+                        <ActionButton
+                                    active={false}
+                                    onClick={[Function]}
+                                    size="small"
+                        >
+                                    French
+                        </ActionButton>
+            </styled.div>
+            <styled.h3>
+                        Page 
+                        1
+            </styled.h3>
+</styled.div>,
+          <TranscriptView
+            currentLanguage="english"
+            loadingData={true}
+            text={
+                        Array [
+                                    "one two three",
+                                  ]
+            }
+            translating={false}
+/>,
+          <styled.div>
+            <ActionButton
+                        onClick={[Function]}
+                        size="large"
+            >
+                        Previous Page
+            </ActionButton>
+            <ActionButton
+                        onClick={[Function]}
+                        size="large"
+            >
+                        Next Page
+            </ActionButton>
+            <ActionButton
+                        onClick={[Function]}
+                        size="large"
+            >
+                        Translate
+            </ActionButton>
+</styled.div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Lazy Load Transcript",
+          },
+          "ref": null,
+          "rendered": "Lazy Load Transcript",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.div>
+                <ActionButton
+                                active={true}
+                                onClick={[Function]}
+                                size="small"
+                >
+                                English
+                </ActionButton>
+                <ActionButton
+                                active={false}
+                                onClick={[Function]}
+                                size="small"
+                >
+                                French
+                </ActionButton>
+</styled.div>,
+              <styled.h3>
+                Page 
+                1
+</styled.h3>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <ActionButton
+                    active={true}
+                    onClick={[Function]}
+                    size="small"
+>
+                    English
+</ActionButton>,
+                  <ActionButton
+                    active={false}
+                    onClick={[Function]}
+                    size="small"
+>
+                    French
+</ActionButton>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "active": true,
+                    "children": "English",
+                    "onClick": [Function],
+                    "size": "small",
+                  },
+                  "ref": null,
+                  "rendered": "English",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "active": false,
+                    "children": "French",
+                    "onClick": [Function],
+                    "size": "small",
+                  },
+                  "ref": null,
+                  "rendered": "French",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  "Page ",
+                  1,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Page ",
+                1,
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentLanguage": "english",
+            "loadingData": true,
+            "text": Array [
+              "one two three",
+            ],
+            "translating": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <ActionButton
+                onClick={[Function]}
+                size="large"
+>
+                Previous Page
+</ActionButton>,
+              <ActionButton
+                onClick={[Function]}
+                size="large"
+>
+                Next Page
+</ActionButton>,
+              <ActionButton
+                onClick={[Function]}
+                size="large"
+>
+                Translate
+</ActionButton>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Previous Page",
+                "onClick": [Function],
+                "size": "large",
+              },
+              "ref": null,
+              "rendered": "Previous Page",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Next Page",
+                "onClick": [Function],
+                "size": "large",
+              },
+              "ref": null,
+              "rendered": "Next Page",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Translate",
+                "onClick": [Function],
+                "size": "large",
+              },
+              "ref": null,
+              "rendered": "Translate",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <styled.div>
+          <styled.h1>
+                    Lazy Load Transcript
+          </styled.h1>
+          <styled.div>
+                    <styled.div>
+                              <ActionButton
+                                        active={true}
+                                        onClick={[Function]}
+                                        size="small"
+                              >
+                                        English
+                              </ActionButton>
+                              <ActionButton
+                                        active={false}
+                                        onClick={[Function]}
+                                        size="small"
+                              >
+                                        French
+                              </ActionButton>
+                    </styled.div>
+                    <styled.h3>
+                              Page 
+                              1
+                    </styled.h3>
+          </styled.div>
+          <TranscriptView
+                    currentLanguage="english"
+                    loadingData={true}
+                    text={
+                              Array [
+                                        "one two three",
+                                      ]
+                    }
+                    translating={false}
+          />
+          <styled.div>
+                    <ActionButton
+                              onClick={[Function]}
+                              size="large"
+                    >
+                              Previous Page
+                    </ActionButton>
+                    <ActionButton
+                              onClick={[Function]}
+                              size="large"
+                    >
+                              Next Page
+                    </ActionButton>
+                    <ActionButton
+                              onClick={[Function]}
+                              size="large"
+                    >
+                              Translate
+                    </ActionButton>
+          </styled.div>
+</styled.div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.h1>
+              Lazy Load Transcript
+</styled.h1>,
+            <styled.div>
+              <styled.div>
+                            <ActionButton
+                                          active={true}
+                                          onClick={[Function]}
+                                          size="small"
+                            >
+                                          English
+                            </ActionButton>
+                            <ActionButton
+                                          active={false}
+                                          onClick={[Function]}
+                                          size="small"
+                            >
+                                          French
+                            </ActionButton>
+              </styled.div>
+              <styled.h3>
+                            Page 
+                            1
+              </styled.h3>
+</styled.div>,
+            <TranscriptView
+              currentLanguage="english"
+              loadingData={true}
+              text={
+                            Array [
+                                          "one two three",
+                                        ]
+              }
+              translating={false}
+/>,
+            <styled.div>
+              <ActionButton
+                            onClick={[Function]}
+                            size="large"
+              >
+                            Previous Page
+              </ActionButton>
+              <ActionButton
+                            onClick={[Function]}
+                            size="large"
+              >
+                            Next Page
+              </ActionButton>
+              <ActionButton
+                            onClick={[Function]}
+                            size="large"
+              >
+                            Translate
+              </ActionButton>
+</styled.div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Lazy Load Transcript",
+            },
+            "ref": null,
+            "rendered": "Lazy Load Transcript",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <styled.div>
+                  <ActionButton
+                                    active={true}
+                                    onClick={[Function]}
+                                    size="small"
+                  >
+                                    English
+                  </ActionButton>
+                  <ActionButton
+                                    active={false}
+                                    onClick={[Function]}
+                                    size="small"
+                  >
+                                    French
+                  </ActionButton>
+</styled.div>,
+                <styled.h3>
+                  Page 
+                  1
+</styled.h3>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <ActionButton
+                      active={true}
+                      onClick={[Function]}
+                      size="small"
+>
+                      English
+</ActionButton>,
+                    <ActionButton
+                      active={false}
+                      onClick={[Function]}
+                      size="small"
+>
+                      French
+</ActionButton>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "active": true,
+                      "children": "English",
+                      "onClick": [Function],
+                      "size": "small",
+                    },
+                    "ref": null,
+                    "rendered": "English",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "active": false,
+                      "children": "French",
+                      "onClick": [Function],
+                      "size": "small",
+                    },
+                    "ref": null,
+                    "rendered": "French",
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    "Page ",
+                    1,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Page ",
+                  1,
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "currentLanguage": "english",
+              "loadingData": true,
+              "text": Array [
+                "one two three",
+              ],
+              "translating": false,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <ActionButton
+                  onClick={[Function]}
+                  size="large"
+>
+                  Previous Page
+</ActionButton>,
+                <ActionButton
+                  onClick={[Function]}
+                  size="large"
+>
+                  Next Page
+</ActionButton>,
+                <ActionButton
+                  onClick={[Function]}
+                  size="large"
+>
+                  Translate
+</ActionButton>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Previous Page",
+                  "onClick": [Function],
+                  "size": "large",
+                },
+                "ref": null,
+                "rendered": "Previous Page",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Next Page",
+                  "onClick": [Function],
+                  "size": "large",
+                },
+                "ref": null,
+                "rendered": "Next Page",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Translate",
+                  "onClick": [Function],
+                  "size": "large",
+                },
+                "ref": null,
+                "rendered": "Translate",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`should switch view when the language is switched from English to French and back 2`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <styled.div>
+        <styled.h1>
+                Lazy Load Transcript
+        </styled.h1>
+        <styled.div>
+                <styled.div>
+                        <ActionButton
+                                active={true}
+                                onClick={[Function]}
+                                size="small"
+                        >
+                                English
+                        </ActionButton>
+                        <ActionButton
+                                active={false}
+                                onClick={[Function]}
+                                size="small"
+                        >
+                                French
+                        </ActionButton>
+                </styled.div>
+                <styled.h3>
+                        Page 
+                        1
+                </styled.h3>
+        </styled.div>
+        <TranscriptView
+                currentLanguage="english"
+                loadingData={true}
+                text={
+                        Array [
+                                "one two three",
+                              ]
+                }
+                translating={false}
+        />
+        <styled.div>
+                <ActionButton
+                        onClick={[Function]}
+                        size="large"
+                >
+                        Previous Page
+                </ActionButton>
+                <ActionButton
+                        onClick={[Function]}
+                        size="large"
+                >
+                        Next Page
+                </ActionButton>
+                <ActionButton
+                        onClick={[Function]}
+                        size="large"
+                >
+                        Translate
+                </ActionButton>
+        </styled.div>
+</styled.div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <styled.h1>
+            Lazy Load Transcript
+</styled.h1>,
+          <styled.div>
+            <styled.div>
+                        <ActionButton
+                                    active={true}
+                                    onClick={[Function]}
+                                    size="small"
+                        >
+                                    English
+                        </ActionButton>
+                        <ActionButton
+                                    active={false}
+                                    onClick={[Function]}
+                                    size="small"
+                        >
+                                    French
+                        </ActionButton>
+            </styled.div>
+            <styled.h3>
+                        Page 
+                        1
+            </styled.h3>
+</styled.div>,
+          <TranscriptView
+            currentLanguage="english"
+            loadingData={true}
+            text={
+                        Array [
+                                    "one two three",
+                                  ]
+            }
+            translating={false}
+/>,
+          <styled.div>
+            <ActionButton
+                        onClick={[Function]}
+                        size="large"
+            >
+                        Previous Page
+            </ActionButton>
+            <ActionButton
+                        onClick={[Function]}
+                        size="large"
+            >
+                        Next Page
+            </ActionButton>
+            <ActionButton
+                        onClick={[Function]}
+                        size="large"
+            >
+                        Translate
+            </ActionButton>
+</styled.div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Lazy Load Transcript",
+          },
+          "ref": null,
+          "rendered": "Lazy Load Transcript",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <styled.div>
+                <ActionButton
+                                active={true}
+                                onClick={[Function]}
+                                size="small"
+                >
+                                English
+                </ActionButton>
+                <ActionButton
+                                active={false}
+                                onClick={[Function]}
+                                size="small"
+                >
+                                French
+                </ActionButton>
+</styled.div>,
+              <styled.h3>
+                Page 
+                1
+</styled.h3>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <ActionButton
+                    active={true}
+                    onClick={[Function]}
+                    size="small"
+>
+                    English
+</ActionButton>,
+                  <ActionButton
+                    active={false}
+                    onClick={[Function]}
+                    size="small"
+>
+                    French
+</ActionButton>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "active": true,
+                    "children": "English",
+                    "onClick": [Function],
+                    "size": "small",
+                  },
+                  "ref": null,
+                  "rendered": "English",
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "active": false,
+                    "children": "French",
+                    "onClick": [Function],
+                    "size": "small",
+                  },
+                  "ref": null,
+                  "rendered": "French",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  "Page ",
+                  1,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "Page ",
+                1,
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentLanguage": "english",
+            "loadingData": true,
+            "text": Array [
+              "one two three",
+            ],
+            "translating": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <ActionButton
+                onClick={[Function]}
+                size="large"
+>
+                Previous Page
+</ActionButton>,
+              <ActionButton
+                onClick={[Function]}
+                size="large"
+>
+                Next Page
+</ActionButton>,
+              <ActionButton
+                onClick={[Function]}
+                size="large"
+>
+                Translate
+</ActionButton>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Previous Page",
+                "onClick": [Function],
+                "size": "large",
+              },
+              "ref": null,
+              "rendered": "Previous Page",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Next Page",
+                "onClick": [Function],
+                "size": "large",
+              },
+              "ref": null,
+              "rendered": "Next Page",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Translate",
+                "onClick": [Function],
+                "size": "large",
+              },
+              "ref": null,
+              "rendered": "Translate",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <styled.div>
+          <styled.h1>
+                    Lazy Load Transcript
+          </styled.h1>
+          <styled.div>
+                    <styled.div>
+                              <ActionButton
+                                        active={true}
+                                        onClick={[Function]}
+                                        size="small"
+                              >
+                                        English
+                              </ActionButton>
+                              <ActionButton
+                                        active={false}
+                                        onClick={[Function]}
+                                        size="small"
+                              >
+                                        French
+                              </ActionButton>
+                    </styled.div>
+                    <styled.h3>
+                              Page 
+                              1
+                    </styled.h3>
+          </styled.div>
+          <TranscriptView
+                    currentLanguage="english"
+                    loadingData={true}
+                    text={
+                              Array [
+                                        "one two three",
+                                      ]
+                    }
+                    translating={false}
+          />
+          <styled.div>
+                    <ActionButton
+                              onClick={[Function]}
+                              size="large"
+                    >
+                              Previous Page
+                    </ActionButton>
+                    <ActionButton
+                              onClick={[Function]}
+                              size="large"
+                    >
+                              Next Page
+                    </ActionButton>
+                    <ActionButton
+                              onClick={[Function]}
+                              size="large"
+                    >
+                              Translate
+                    </ActionButton>
+          </styled.div>
+</styled.div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <styled.h1>
+              Lazy Load Transcript
+</styled.h1>,
+            <styled.div>
+              <styled.div>
+                            <ActionButton
+                                          active={true}
+                                          onClick={[Function]}
+                                          size="small"
+                            >
+                                          English
+                            </ActionButton>
+                            <ActionButton
+                                          active={false}
+                                          onClick={[Function]}
+                                          size="small"
+                            >
+                                          French
+                            </ActionButton>
+              </styled.div>
+              <styled.h3>
+                            Page 
+                            1
+              </styled.h3>
+</styled.div>,
+            <TranscriptView
+              currentLanguage="english"
+              loadingData={true}
+              text={
+                            Array [
+                                          "one two three",
+                                        ]
+              }
+              translating={false}
+/>,
+            <styled.div>
+              <ActionButton
+                            onClick={[Function]}
+                            size="large"
+              >
+                            Previous Page
+              </ActionButton>
+              <ActionButton
+                            onClick={[Function]}
+                            size="large"
+              >
+                            Next Page
+              </ActionButton>
+              <ActionButton
+                            onClick={[Function]}
+                            size="large"
+              >
+                            Translate
+              </ActionButton>
+</styled.div>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Lazy Load Transcript",
+            },
+            "ref": null,
+            "rendered": "Lazy Load Transcript",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <styled.div>
+                  <ActionButton
+                                    active={true}
+                                    onClick={[Function]}
+                                    size="small"
+                  >
+                                    English
+                  </ActionButton>
+                  <ActionButton
+                                    active={false}
+                                    onClick={[Function]}
+                                    size="small"
+                  >
+                                    French
+                  </ActionButton>
+</styled.div>,
+                <styled.h3>
+                  Page 
+                  1
+</styled.h3>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <ActionButton
+                      active={true}
+                      onClick={[Function]}
+                      size="small"
+>
+                      English
+</ActionButton>,
+                    <ActionButton
+                      active={false}
+                      onClick={[Function]}
+                      size="small"
+>
+                      French
+</ActionButton>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "active": true,
+                      "children": "English",
+                      "onClick": [Function],
+                      "size": "small",
+                    },
+                    "ref": null,
+                    "rendered": "English",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "active": false,
+                      "children": "French",
+                      "onClick": [Function],
+                      "size": "small",
+                    },
+                    "ref": null,
+                    "rendered": "French",
+                    "type": [Function],
+                  },
+                ],
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    "Page ",
+                    1,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Page ",
+                  1,
+                ],
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "currentLanguage": "english",
+              "loadingData": true,
+              "text": Array [
+                "one two three",
+              ],
+              "translating": false,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <ActionButton
+                  onClick={[Function]}
+                  size="large"
+>
+                  Previous Page
+</ActionButton>,
+                <ActionButton
+                  onClick={[Function]}
+                  size="large"
+>
+                  Next Page
+</ActionButton>,
+                <ActionButton
+                  onClick={[Function]}
+                  size="large"
+>
+                  Translate
+</ActionButton>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Previous Page",
+                  "onClick": [Function],
+                  "size": "large",
+                },
+                "ref": null,
+                "rendered": "Previous Page",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Next Page",
+                  "onClick": [Function],
+                  "size": "large",
+                },
+                "ref": null,
+                "rendered": "Next Page",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Translate",
+                  "onClick": [Function],
+                  "size": "large",
+                },
+                "ref": null,
+                "rendered": "Translate",
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
       },
       "type": [Function],
     },
