@@ -11,5 +11,23 @@ functions:
     handler: server/index.handler
     events:
       - http:
-          path: /
+          path: /transcript
           method: get
+          cors: true
+      - http:
+          path: /translate
+          method: post
+          cors: true
+    environment:
+      RAPID_PROJECT_NAME: ${file(env.yml):RAPID_PROJECT_NAME}
+      RAPID_API_KEY: ${file(env.yml):RAPID_API_KEY}
+      GOOGLE_API_KEY: ${file(env.yml):GOOGLE_API_KEY}
+
+plugins:
+  - serverless-plugin-optimize
+
+custom:
+  optimize:
+    debug: false
+    minify: true
+    global: false

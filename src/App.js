@@ -65,7 +65,8 @@ class App extends Component<Props, State> {
 
   retrieveData = () => {
     axios
-      .get('https://vnsp2998o9.execute-api.eu-west-2.amazonaws.com/dev/')
+      // .get(`${baseUrl}/transcript`)
+      .get('https://vnsp2998o9.execute-api.eu-west-2.amazonaws.com/dev/transcript')
       .then((res) => {
         this.setState(
           {
@@ -137,6 +138,15 @@ class App extends Component<Props, State> {
     });
   };
 
+  translate = () => {
+    axios
+      .post('https://vnsp2998o9.execute-api.eu-west-2.amazonaws.com/dev/translate', {
+        text: 'here is some English to test'
+      })
+      .then(res => console.log('RESULT!', res))
+      .catch(err => console.log('ERR!', err));
+  };
+
   render() {
     const { pages, currentPage } = this.state;
     return (
@@ -152,7 +162,9 @@ class App extends Component<Props, State> {
             <ActionButton size="large" onClick={this.nextPage}>
               Next Page
             </ActionButton>
-            <ActionButton size="large">Translate</ActionButton>
+            <ActionButton size="large" onClick={this.translate}>
+              Translate
+            </ActionButton>
           </ActionButtonWrapper>
         </Container>
       </Wrapper>
