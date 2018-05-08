@@ -8,4 +8,10 @@ it('should render without exploding', () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-it('should send event to onClick prop when clicked', () => {});
+it('should send event to onClick prop when clicked', () => {
+  const mockFunc = jest.fn();
+  const wrapper = shallow(<ActionButton onClick={mockFunc} />);
+  expect(mockFunc).toHaveBeenCalledTimes(0);
+  wrapper.simulate('click');
+  expect(mockFunc).toHaveBeenCalledTimes(1);
+});

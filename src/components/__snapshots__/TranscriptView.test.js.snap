@@ -1,5 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should render some text when words stored in state and passed in as props 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -1,10 +1,16 @@
+  ShallowWrapper {
+    \\"length\\": 1,
+    Symbol(enzyme.__root__): [Circular],
+    Symbol(enzyme.__unrendered__): <ActionButton
+      onClick={[Function onClick]}
++     text={
++       Array [
++         \\"one two three\\",
++         \\"four five six\\",
++       ]
++     }
+    />,
+    Symbol(enzyme.__renderer__): Object {
+      \\"batchedUpdates\\": [Function batchedUpdates],
+      \\"getNode\\": [Function getNode],
+      \\"render\\": [Function render],
+@@ -16,10 +22,14 @@
+      \\"key\\": undefined,
+      \\"nodeType\\": \\"class\\",
+      \\"props\\": Object {
+        \\"children\\": undefined,
+        \\"onClick\\": [Function onClick],
++       \\"text\\": Array [
++         \\"one two three\\",
++         \\"four five six\\",
++       ],
+      },
+      \\"ref\\": null,
+      \\"rendered\\": null,
+      \\"type\\": [Function StyledComponent],
+    },
+@@ -29,10 +39,14 @@
+        \\"key\\": undefined,
+        \\"nodeType\\": \\"class\\",
+        \\"props\\": Object {
+          \\"children\\": undefined,
+          \\"onClick\\": [Function onClick],
++         \\"text\\": Array [
++           \\"one two three\\",
++           \\"four five six\\",
++         ],
+        },
+        \\"ref\\": null,
+        \\"rendered\\": null,
+        \\"type\\": [Function StyledComponent],
+      },"
+`;
+
 exports[`should render without exploding 1`] = `
 ShallowWrapper {
   "length": 1,
